@@ -18,7 +18,7 @@
 3)title(название животных, text);
 
 
-![](skrin/animal.aa.png)
+![](markdown/skrin/animal.aa.png)
 ![](skrin/animal.b.png)
 
     CLIENT. Имеет столбцы:
