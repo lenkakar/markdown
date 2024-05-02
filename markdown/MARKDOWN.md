@@ -26,8 +26,11 @@
 ## 2.1. Описание атрибутов.
 
     ANIMALS. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)id_diagnoses(диагноз, integer);
+
 3)title(название животных, text);
 
 
@@ -36,7 +39,9 @@
 
     CLIENT. Имеет столбцы:
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)id_animals(айти животного, integer);
+
 3)full_Name_And_Animals(ФИО клиента и их животное, text);
 
 
@@ -44,9 +49,13 @@
 ![](skrin/client.b.png)
 
     DIAGNOSES. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)id_medicines(диагнозы животных, integer);
+
 3)title(название лекарств, text);
+
 
 
 ![](skrin/diagnoses.aa.png)
@@ -54,9 +63,13 @@
 
 
     DOCTORS. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)id_offices(айти офиса, integer);
+
 3)id_specialization(специализация врачей, integer);
+
 4)full_Name(ФИО врачей, text);
 
 
@@ -64,11 +77,17 @@
 ![](skrin/doctors.b.png)
 
     ENTRY. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)id_animals(айти животного, integer);
+
 3)id_services(айти услуги, integer);
+
 4)id_client(айти клиента, integer);
+
 5)id_doctors(айти докторов, integer);
+
 6)queue(очередь, int);
 
 
@@ -76,7 +95,9 @@
 ![](skrin/entry.b.png)
 
     MEDICINES. Имеет столюцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)title(название лекарств, text);
 
 
@@ -84,7 +105,9 @@
 ![](skrin/medicines.b.png)
 
     OFFICES. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)number(номера кабинетов, text);
 
 
@@ -92,7 +115,9 @@
 ![](skrin/offices.b.png)
 
     SERVICES. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)title(название услуг, text);
 
 
@@ -100,7 +125,9 @@
 ![](skrin/services.b.png)
 
     SPECIALIZATION. Имеет столбцы:
+    
 1)id(айдишник таблицы, настроен по умолчанию, int);
+
 2)title(название специализаций, text);
 
 
