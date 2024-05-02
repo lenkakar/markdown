@@ -16,6 +16,8 @@
 1)id(айдишник таблицы, настроен по умолчанию, int);
 2)id_diagnoses(диагноз, integer);
 3)title(название животных, text);
+
+
 ![](skrin/animal.aa.png)
 ![](skrin/animal.b.png)
 
