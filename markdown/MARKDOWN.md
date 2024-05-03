@@ -25,7 +25,7 @@
 
 ## 2.1. Описание атрибутов.
 
-1. ANIMALS. 
+1. ## ANIMALS. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -37,7 +37,8 @@
 ![](skrin/animal.aa.png)
 ![](skrin/animal.b.png)
 
-2. CLIENT. 
+
+2. ## CLIENT. 
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
 2)id_animals(айти животного, integer);
@@ -48,7 +49,8 @@
 ![](skrin/client.aa.png)
 ![](skrin/client.b.png)
 
-3. DIAGNOSES. 
+
+3. ## DIAGNOSES. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -62,7 +64,7 @@
 ![](skrin/diagnoses.b.png)
 
 
-4. DOCTORS.
+4. ## DOCTORS.
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -76,7 +78,8 @@
 ![](skrin/doctors.aa.png)
 ![](skrin/doctors.b.png)
 
-5. ENTRY. 
+
+5. ## ENTRY. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -94,7 +97,8 @@
 ![](skrin/entry.aa.png)
 ![](skrin/entry.b.png)
 
-6. MEDICINES.
+
+6. ## MEDICINES.
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -104,7 +108,8 @@
 ![](skrin/medicines.aa.png)
 ![](skrin/medicines.b.png)
 
-7. OFFICES. 
+
+7. ## OFFICES. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -114,7 +119,8 @@
 ![](skrin/offices.aa.png)
 ![](skrin/offices.b.png)
 
-8. SERVICES. 
+
+8. ## SERVICES. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -124,7 +130,8 @@
 ![](skrin/services.aa.png)
 ![](skrin/services.b.png)
 
-9. SPECIALIZATION. 
+
+9. ## SPECIALIZATION. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
