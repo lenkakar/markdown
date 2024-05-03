@@ -37,7 +37,7 @@
 ![](skrin/animal.aa.png)
 ![](skrin/animal.b.png)
 
-    CLIENT. Имеет столбцы:
+    CLIENT. 
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
 2)id_animals(айти животного, integer);
@@ -48,7 +48,7 @@
 ![](skrin/client.aa.png)
 ![](skrin/client.b.png)
 
-    DIAGNOSES. Имеет столбцы:
+    DIAGNOSES. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -62,7 +62,7 @@
 ![](skrin/diagnoses.b.png)
 
 
-    DOCTORS. Имеет столбцы:
+    DOCTORS.
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -76,7 +76,7 @@
 ![](skrin/doctors.aa.png)
 ![](skrin/doctors.b.png)
 
-    ENTRY. Имеет столбцы:
+    ENTRY. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -94,7 +94,7 @@
 ![](skrin/entry.aa.png)
 ![](skrin/entry.b.png)
 
-    MEDICINES. Имеет столюцы:
+    MEDICINES.
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -104,7 +104,7 @@
 ![](skrin/medicines.aa.png)
 ![](skrin/medicines.b.png)
 
-    OFFICES. Имеет столбцы:
+    OFFICES. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -114,7 +114,7 @@
 ![](skrin/offices.aa.png)
 ![](skrin/offices.b.png)
 
-    SERVICES. Имеет столбцы:
+    SERVICES. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
@@ -124,7 +124,7 @@
 ![](skrin/services.aa.png)
 ![](skrin/services.b.png)
 
-    SPECIALIZATION. Имеет столбцы:
+    SPECIALIZATION. 
     
 1)id(айдишник таблицы, настроен по умолчанию, int);
 
