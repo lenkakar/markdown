@@ -256,7 +256,14 @@ SELECT id,
 FROM doctors;
 ```
 ![](skrin/FF.png)
-![](skrin/4.png)
+```
+SELECT id,
+	id_offices,
+    full_name,
+	LAST_VALUE(id) OVER(PARTITION BY full_name ORDER BY id) AS LAST_VALUE
+FROM doctors;
+```
+![](skrin/L.png)
 
 
 ## 8. Описание работы JOIN.
