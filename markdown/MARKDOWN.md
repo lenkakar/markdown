@@ -186,7 +186,13 @@
 
 # 7.3 Функции смещения.
 - функции, которые позволяют перемещаться и обращаться к разным строкам в окне.
-
+```
+SELECT id,
+	id_offices,
+    full_name,
+	LAG(full_name) OVER(PARTITION BY id_offices ORDER BY full_name)
+FROM doctors;
+```
 ![](skrin/1.png)
 ![](skrin/2.png)
 ![](skrin/3.png)
