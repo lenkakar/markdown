@@ -145,13 +145,25 @@
 ## 3. Описание функции UNION.
 
 - UNION -  объединяет двух наборов строк id_diagnoses и title возвращаемых SQL-запросами.
-
+```
+SELECT id_diagnoses
+FROM animals
+UNION
+SELECT title
+FROM medicines
+ORDER BY title
+```
 ![](skrin/union.png)
 
 
 ## 4. Описание функции ORDER BY.
 
 - ORDER BY - оператор, который отвечает за группировку данных.
+```
+SELECT id_diagnoses, title
+FROM animals
+ORDER BY title
+```
 
 ![](skrin/order.png)
 
@@ -160,12 +172,26 @@
 
 - HAVING -  получения данных из таблицы animals, соответствующих определённым значениям результатов, возвращаемых агрегатными функциями.
 
+```
+SELECT title, id_diagnoses
+FROM animals
+GROUP BY title
+HAVING title = 'Лиса'
+```
+
 ![](skrin/HAVING.png)
 
 
 ## 6. Описание функции вложеных запросов.
 
 - Вместо условия используется вложенный запрос.
+
+```
+SELECT title, id_diagnoses
+FROM animals
+WHERE title = (SELECT title FROM animals
+               WHERE title = 'Лиса')
+```
 
 ![](skrin/select.png)
 
@@ -174,14 +200,29 @@
 - Скрин 1, выводит препорат с самым длинным названием. 
 - Скрин 2, выводит препорат с самым коротким названием.
 - Скрин 3, выводит общее количество животных.
-
+```
+SELECT MAX(LENGTH(title)) AS Препорат_с_самым_длинным_названием 
+FROM medicines
+```
 ![](skrin/агрег.png)
+
+```
+SELECT MIN(LENGTH(title)) AS Препорат_с_самым_коротким_названием 
+FROM medicines
+```
 ![](skrin/агрег2.png)
+
+```
+SELECT COUNT(title) AS количество_животных
+FROM medicines
+```
 ![](skrin/агрег3.png)
 
 # 7.2. Ранжерующие функции.
 - возвращают значение для каждой строки группы в результирующем наборе данных.
+```
 
+```
 ![](skrin/ранж.png)
 
 # 7.3 Функции смещения.
