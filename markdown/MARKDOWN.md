@@ -283,25 +283,45 @@ JOIN services ON entry.id_services = services.id
 
 - возвращает пересечение множеств и все элементы из левой таблицы;
 ```
-
+SELECT doctors.id, doctors.id_specialization, offices.id
+FROM doctors
+LEFT JOIN offices ON doctors.id_offices = offices.id
 ```
 ![](skrin/left.png)
 
 # 8.3. Right Join.
 
 -  работает по тому же принципу, но вместо левой таблицы — правая;
+```
+SELECT doctors.id, doctors.id_specialization, offices.id
+FROM doctors
+RIGHT JOIN offices ON doctors.id_offices = offices.id
+```
 
 ![](skrin/right.png)
 
 ## 9. Описание работы функции CASE.
 
 - оператор позволяет осуществить проверку условий и возвратить в зависимости от выполнения того или иного условия тот или иной результат.
-
+```
+SELECT title,
+CASE
+WHEN title = 'Кошка' THEN 'МЯЯЯЯЯЯУ'
+WHEN title = 'Собака' THEN 'ГАААВ ГАВ'
+WHEN title = 'Корова' THEN 'Муууу'
+ELSE 'НЕ ЗНАЮ'
+END as ЧТО_ОНО_ГОВОРИТ
+FROM animals
+```
 ![](skrin/case.png)
 
 
 ## 10.  Описание работы функции WITH.
 
 - используется для создания временных таблиц, которые можно использовать внутри запросов.(у нас это drip).
-
+```
+WITH Drip AS
+(SELECT id_diagnoses, title FROM animals)
+SELECT * FROM Drip
+```
 ![](skrin/with.png)
