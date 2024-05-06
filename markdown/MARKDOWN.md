@@ -272,13 +272,19 @@ FROM doctors;
 
 # 8.1. Inner Join 
 - внутреннее объединение
-
+```
+SELECT entry.id, services.title
+FROM entry
+JOIN services ON entry.id_services = services.id
+```
 ![](skrin/join.png)
 
 # 8.2. Left Join.
 
 - возвращает пересечение множеств и все элементы из левой таблицы;
+```
 
+```
 ![](skrin/left.png)
 
 # 8.3. Right Join.
