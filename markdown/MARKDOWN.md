@@ -210,7 +210,7 @@ FROM medicines
 SELECT MIN(LENGTH(title)) AS Препорат_с_самым_коротким_названием 
 FROM medicines
 ```
-![](skrin/агрег2.png)
+![](skrin/7.2.png)
 
 ```
 SELECT COUNT(title) AS количество_животных
