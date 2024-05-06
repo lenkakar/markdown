@@ -221,7 +221,12 @@ FROM medicines
 # 7.2. Ранжерующие функции.
 - возвращают значение для каждой строки группы в результирующем наборе данных.
 ```
-
+SELECT id,
+	id_offices,
+	full_name,
+	ROW_NUMBER() OVER(PARTITION BY id_offices ORDER BY full_name),
+	RANK() OVER(PARTITION BY id_offices ORDER BY full_name)
+FROM doctors;
 ```
 ![](skrin/ранж.png)
 
@@ -235,8 +240,22 @@ SELECT id,
 FROM doctors;
 ```
 ![](skrin/1.png)
+```
+SELECT id,
+	id_offices,
+    full_name,
+	LEAD(full_name) OVER(PARTITION BY id_offices ORDER BY full_name)
+FROM doctors;
+```
 ![](skrin/2.png)
-![](skrin/3.png)
+```
+SELECT id,
+	id_offices,
+    full_name,
+	FIRST_VALUE(id_offices) OVER(PARTITION BY full_name ORDER BY id_offices) AS FIRST_VALUE
+FROM doctors;
+```
+![](skrin/FF.png)
 ![](skrin/4.png)
 
 
